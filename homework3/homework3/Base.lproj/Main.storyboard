@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homework3" customModuleProvider="target" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="3c5-fV-y45">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3c5-fV-y45">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -26,17 +26,15 @@
                                 <rect key="frame" x="0.0" y="229" width="414" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyY-bv-PE9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyY-bv-PE9">
                                 <rect key="frame" x="77" y="683" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="playAndPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dKI-7Z-APz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FW2-Xe-45Q">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FW2-Xe-45Q">
                                 <rect key="frame" x="300" y="683" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="hideBackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Trt-mr-OhK"/>
@@ -48,6 +46,15 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LyY-bv-PE9" secondAttribute="bottom" constant="183" id="1gP-xh-FQu"/>
+                            <constraint firstItem="50j-bt-St1" firstAttribute="trailing" secondItem="FW2-Xe-45Q" secondAttribute="trailing" constant="68" id="9S7-LT-8bx"/>
+                            <constraint firstItem="LyY-bv-PE9" firstAttribute="baseline" secondItem="FW2-Xe-45Q" secondAttribute="baseline" id="EdS-d6-d7M"/>
+                            <constraint firstItem="FW2-Xe-45Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LyY-bv-PE9" secondAttribute="trailing" constant="8" symbolic="YES" id="SD4-Ts-loV"/>
+                            <constraint firstItem="50j-bt-St1" firstAttribute="bottom" secondItem="LyY-bv-PE9" secondAttribute="bottom" constant="149" id="q2V-cC-Y6y"/>
+                            <constraint firstItem="LyY-bv-PE9" firstAttribute="leading" secondItem="50j-bt-St1" secondAttribute="leading" constant="77" id="wxE-mM-iPK"/>
+                            <constraint firstAttribute="trailing" secondItem="LyY-bv-PE9" secondAttribute="trailing" constant="291" id="zo7-sl-KCK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="50j-bt-St1"/>
                         <viewLayoutGuide key="contentLayoutGuide" id="ksN-3K-jIL"/>
                         <viewLayoutGuide key="frameLayoutGuide" id="agY-HD-iEc"/>
