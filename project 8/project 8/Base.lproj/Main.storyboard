@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ahH-aM-qw7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 1-->
+        <scene sceneID="A1X-Oj-EdP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DYo-Bl-FNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="fIb-FX-RSf" customClass="rotateViewController" customModule="project_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3NF-mh-DxW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9JY-3K-Kbx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="OdP-XC-sL0"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="152" y="-104"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="yGK-KS-fX7">
+            <objects>
+                <viewController id="ahH-aM-qw7" customClass="secondViewController" customModule="project_8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzM-SR-fuz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wh-Dq-X2U">
+                                <rect key="frame" x="20" y="248" width="374" height="400"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="4ez-7s-6M0"/>
+                                    <constraint firstAttribute="height" constant="400" id="vv7-eb-cJT"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Cfq-cz-c3w" appends="YES" id="g8a-sQ-Vs9"/>
+                                    <outletCollection property="gestureRecognizers" destination="10u-BK-7jY" appends="YES" id="SG9-Ez-ec7"/>
+                                    <outletCollection property="gestureRecognizers" destination="l8E-oc-MAH" appends="YES" id="PKE-Al-pI7"/>
+                                    <outletCollection property="gestureRecognizers" destination="k2G-k2-8UF" appends="YES" id="a7F-RY-uRU"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-pR-QVe">
+                                <rect key="frame" x="32" y="55" width="382" height="786"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hZm-pR-QVe" firstAttribute="top" secondItem="OjD-j4-0al" secondAttribute="top" constant="16" id="1xp-de-8AW"/>
+                            <constraint firstItem="8Wh-Dq-X2U" firstAttribute="centerY" secondItem="hzM-SR-fuz" secondAttribute="centerY" id="5li-gv-uXi"/>
+                            <constraint firstItem="OjD-j4-0al" firstAttribute="trailing" secondItem="hZm-pR-QVe" secondAttribute="trailing" constant="16" id="Cbm-9w-Y82"/>
+                            <constraint firstItem="hZm-pR-QVe" firstAttribute="leading" secondItem="OjD-j4-0al" secondAttribute="leading" constant="16" id="N82-e0-AWv"/>
+                            <constraint firstItem="8Wh-Dq-X2U" firstAttribute="centerX" secondItem="hzM-SR-fuz" secondAttribute="centerX" id="bdQ-Tl-Nh5"/>
+                            <constraint firstItem="OjD-j4-0al" firstAttribute="bottom" secondItem="hZm-pR-QVe" secondAttribute="bottom" constant="16" id="fPH-hd-DvZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OjD-j4-0al"/>
+                    </view>
+                    <connections>
+                        <outlet property="CentreView" destination="hZm-pR-QVe" id="hJp-M5-QrE"/>
+                        <outlet property="directionLabel" destination="hZm-pR-QVe" id="DyG-fX-nC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOC-zS-6Gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="Cfq-cz-c3w">
+                    <connections>
+                        <action selector="swipeGesture:" destination="ahH-aM-qw7" id="ZFH-VR-PUO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="10u-BK-7jY">
+                    <connections>
+                        <action selector="swipeGesture:" destination="ahH-aM-qw7" id="4SI-Y4-SDv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="l8E-oc-MAH">
+                    <connections>
+                        <action selector="swipeGesture:" destination="ahH-aM-qw7" id="45N-V3-MHL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="k2G-k2-8UF">
+                    <connections>
+                        <action selector="swipeGesture:" destination="ahH-aM-qw7" id="Ib0-2L-dj6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1028.985507246377" y="-113.16964285714285"/>
+        </scene>
+    </scenes>
+</document>
